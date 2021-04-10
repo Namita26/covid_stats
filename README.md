@@ -3,7 +3,7 @@
 Basic set up for a python flask framework for writing RESTful APIs. In addition, MongoDB database is used.
 
 
-# Set up
+## Set up
 
 Set up the python3 environment with virtualenv.
 1. Clone the repository
@@ -17,7 +17,7 @@ Set up the python3 environment with virtualenv.
 9. Now, for running the flask app in a development environment - `flask run`
 
 
-# Sample Request Payload for registering a covid case.
+## Sample Request Payload for registering a covid case.
 
 curl --location --request POST 'http://127.0.0.1:5000/v1/covid_cases' \
 --header 'Content-Type: application/json' \
@@ -35,7 +35,7 @@ curl --location --request POST 'http://127.0.0.1:5000/v1/covid_cases' \
 }'
 
 
-# Sample Response after registration of a covid case.
+## Sample Response after registration of a covid case.
 
 {
     "_id": "6071ccd7a581396785e75cad",
@@ -54,12 +54,12 @@ curl --location --request POST 'http://127.0.0.1:5000/v1/covid_cases' \
 }
 
 
-# Sample Request for to get covid cases with filters
+## Sample Request for to get covid cases with filters
 
 curl --location --request GET 'http://127.0.0.1:5000/v1/covid_cases?start_date=2021-03-28&end_date=2021-04-10&type=active&period=daily'
 
 
-# Sample Response for getting no of a covid cases using filters
+## Sample Response for getting no of a covid cases using filters
 
 [
     {
