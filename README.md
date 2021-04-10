@@ -7,14 +7,15 @@ Basic set up for a python flask framework for writing RESTful APIs. In addition,
 
 Set up the python3 environment with virtualenv.
 1. Clone the repository
-2. cd covid_stats
-3. python3 -m venv shopse_venv
-4. python -m requirements.txt
-5. With these instructions, the python3 environment will be set up.
-6. For mongodb set up, install mongo db compass or set up mongo db locally. Follow instructuons from here - https://docs.mongodb.com/compass/current/install/
-7. Create a mongodb database named `covid` and a document inside that named `case`
-8. System environment variables to initialize are - 1. `export ENVIRONMENT=development` 2. `export FLASK_ENV=development` 3. `export FLASK_APP=app.flask_app`
-9. Now, for running the flask app in a development environment - `flask run`
+2. `cd covid_stats`
+3. `python3 -m venv shopse_venv`
+4. `source shopse_env/bin/activate`
+5. `python -m requirements.txt`
+6. With these instructions, the python3 environment will be set up.
+7. For mongodb set up, install mongo db compass or set up mongo db locally. Follow instructuons from here - https://docs.mongodb.com/compass/current/install/
+8. Create a mongodb database named `covid` and a document inside that named `case`
+9. System environment variables to initialize are - 1. `export ENVIRONMENT=development` 2. `export FLASK_ENV=development` 3. `export FLASK_APP=app.flask_app`
+10. Now, for running the flask app in a development environment - `flask run`
 
 
 ## Sample Request Payload for registering a covid case.
@@ -75,3 +76,10 @@ curl --location --request GET 'http://127.0.0.1:5000/v1/covid_cases?start_date=2
     }
 ]
 ```
+
+## Testing
+
+For testing, pytest package is used. Instructions for testing are given below
+1. After cloning, run `cd covid_stats` and `source shopse_env/bin/activate`
+2. System environment variables to initialize are - 1. `export ENVIRONMENT=testing` 2. `export FLASK_ENV=testing` 3. `export FLASK_APP=app.flask_app`
+3. `pytest -v`
