@@ -18,7 +18,7 @@ Set up the python3 environment with virtualenv.
 
 
 ## Sample Request Payload for registering a covid case.
-
+```
 curl --location --request POST 'http://127.0.0.1:5000/v1/covid_cases' \
 --header 'Content-Type: application/json' \
 --data-raw '{
@@ -33,10 +33,11 @@ curl --location --request POST 'http://127.0.0.1:5000/v1/covid_cases' \
     },
     "found_active_on": "2021-03-22"
 }'
+```
 
 
 ## Sample Response after registration of a covid case.
-
+```
 {
     "_id": "6071ccd7a581396785e75cad",
     "user_id": 17,
@@ -52,15 +53,17 @@ curl --location --request POST 'http://127.0.0.1:5000/v1/covid_cases' \
     "created_at": "2021-04-10 16:05:43.033741",
     "modified_at": "2021-04-10 16:05:43.033741"
 }
-
+```
 
 ## Sample Request for to get covid cases with filters
 
+```
 curl --location --request GET 'http://127.0.0.1:5000/v1/covid_cases?start_date=2021-03-28&end_date=2021-04-10&type=active&period=daily'
-
+```
 
 ## Sample Response for getting no of a covid cases using filters
 
+```
 [
     {
         "period_counter": 13,  ## if period is week the period_counter is nth week of the year.
@@ -71,3 +74,4 @@ curl --location --request GET 'http://127.0.0.1:5000/v1/covid_cases?start_date=2
         "cases": 1
     }
 ]
+```
