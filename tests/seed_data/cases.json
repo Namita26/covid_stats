@@ -1,0 +1,64 @@
+[{
+  "user_id": 11,
+  "current_status": "RECOVERED",
+  "location": {
+  "area": "baner",
+  "city": "Pune",
+  "state": "Maharashtra",
+  "country": "India",
+  "continent": "Asia"},
+  "recovered_on": "2021-04-10 05:29:03.758763",
+  "found_active_on": "2021-03-28 05:29:03.758763"
+},{
+  "user_id": 12,
+  "current_status": "RECOVERED",
+  "location": {
+  "area": "Aundh",
+  "city": "Pune",
+  "state": "Maharashtra",
+  "country": "India",
+  "continent": "Asia"},
+  "recovered_on": "2021-04-08 05:29:03.758763",
+  "found_active_on": "2021-03-25 05:29:03.758763"
+},{
+  "user_id": 13,
+  "current_status": "ACTIVE",
+  "location": {
+  "area": "Chandan Nagar",
+  "city": "Pune",
+  "state": "Maharashtra",
+  "country": "India",
+  "continent": "Asia"},
+  "found_active_on": "2021-03-25 05:29:03.758763"
+},{
+  "user_id": 14,
+  "current_status": "ACTIVE",
+  "location": {
+  "area": "Hinjewadi",
+  "city": "Pune",
+  "state": "Maharashtra",
+  "country": "India",
+  "continent": "Asia"},
+  "found_active_on": "2021-04-04 05:29:03.758763"
+},{
+  "user_id": 15,
+  "current_status": "DECEASED",
+  "location": {
+  "area": "Walkeshwar",
+  "city": "Mumbai",
+  "state": "Maharashtra",
+  "country": "India",
+  "continent": "Asia"},
+  "deceased_on": "2021-04-09 05:29:03.758763",
+  "found_active_on": "2021-03-25 05:29:03.758763"
+},{
+  "user_id": 16,
+  "current_status": "ACTIVE",
+  "location": {
+  "area": "Bandra",
+  "city": "Mumbai",
+  "state": "Maharashtra",
+  "country": "India",
+  "continent": "Asia"},
+  "found_active_on": "2021-03-20 05:29:03.758763"
+}]
